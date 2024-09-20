@@ -64,7 +64,7 @@ Resources:
                     'lambda:*',
                     'apigateway:*',
                     'logs:*'
-                  ],
+                  ]
                 Resource: '*'
             
 Outputs:
