@@ -48,9 +48,25 @@ Resources:
           PolicyDocument:
             Version: "2012-10-17"
             Statement:
-              - Effect: Deny
+              - Effect: Allow
                 Action: 'comprehend:*'
                 Resource: '*'
+        - PolicyName: permission
+          PolicDocument:
+            version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: [
+                    "cloudformation:*",
+                    "iam:CreateRole",
+                    "iam:AttachRolePolicy",
+                    "iam:PassRole",
+                    "lambda:*",
+                    "apigateway:*",
+                    "logs:*"
+                  ],
+                Resource: '*'
+            
 Outputs:
   SentimentAPI:
     Description: "API Gateway endpoint URL for Prod stage for Sentiment function"
