@@ -57,13 +57,13 @@ Resources:
             Statement:
               - Effect: Allow
                 Action: [
-                    "cloudformation:*",
-                    "iam:CreateRole",
-                    "iam:AttachRolePolicy",
-                    "iam:PassRole",
-                    "lambda:*",
-                    "apigateway:*",
-                    "logs:*"
+                    'cloudformation:*',
+                    'iam:CreateRole',
+                    'iam:AttachRolePolicy',
+                    'iam:PassRole',
+                    'lambda:*',
+                    'apigateway:*',
+                    'logs:*'
                   ],
                 Resource: '*'
             
